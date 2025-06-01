@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon MCP Interface</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokémon MCP Interface</h1>
+            <p>A Modern Control Platform for Pokémon Data</p>
+        </header>
+
+        <main>
+            <section class="search-section">
+                <h2>Search Pokémon</h2>
+                <div class="search-box">
+                    <select id="pokemonSearch">
+                        <option value="">Select a Pokémon</option>
+                    </select>
+                    <button onclick="searchPokemon()">
+                        <span>Search</span>
+                    </button>
+                </div>
+                <div id="searchResults" class="results-grid"></div>
+            </section>
+
+            <section class="comparison-section">
+                <h2>Compare Pokémon</h2>
+                <div class="comparison-box">
+                    <select id="pokemon1">
+                        <option value="">Select first Pokémon</option>
+                    </select>
+                    <select id="pokemon2">
+                        <option value="">Select second Pokémon</option>
+                    </select>
+                    <button onclick="comparePokemon()">
+                        <span>Compare</span>
+                    </button>
+                </div>
+                <div id="comparisonResults" class="comparison-results"></div>
+            </section>
+
+            <section class="strategy-section">
+                <h2>Find Counters</h2>
+                <div class="strategy-box">
+                    <select id="targetPokemon">
+                        <option value="">Select Pokémon to counter</option>
+                    </select>
+                    <button onclick="findCounters()">
+                        <span>Find Counters</span>
+                    </button>
+                </div>
+                <div id="counterResults" class="results-grid"></div>
+            </section>
+
+            <section class="team-section">
+                <h2>Team Builder</h2>
+                <div class="team-box">
+                    <textarea id="teamDescription" placeholder="Describe your desired team (e.g., 'a balanced team with strong defense and one fire-type attacker')"></textarea>
+                    <button onclick="generateTeam()">
+                        <span>Generate Team</span>
+                    </button>
+                </div>
+                <div id="teamResults" class="results-grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by Pokémon MCP Server</p>
+        </footer>
+    </div>
+
+    <script src="agents.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
