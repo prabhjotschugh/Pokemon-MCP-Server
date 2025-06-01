@@ -1,4 +1,4 @@
-# Pokémon MCP Server
+# Pokémon MCP Server 🧩
 
 A Modular Control Platform server that interfaces with the Open Pokémon API, providing structured access to Pokémon data for AI agents.
 
@@ -53,15 +53,6 @@ uvicorn app.main:app --reload
 └── README.md              # This file
 ```
 
-## API Documentation
+## Demo Video
 
-Once the server is running, visit:
-- http://localhost:8000/docs for Swagger UI documentation
-- http://localhost:8000/redoc for ReDoc documentation
-
-## Testing
-
-Run tests with:
-```bash
-pytest
-``` 
+https://github.com/user-attachments/assets/2775e78d-afd4-41df-8c5b-6ffdabda98f5
